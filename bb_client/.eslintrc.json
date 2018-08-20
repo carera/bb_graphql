@@ -1,0 +1,39 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true,
+      "arrowFunctions": true,
+      "classes": true
+    }
+  },
+  "globals": {
+    "__DEV__": false,
+    "fetch": false,
+    "console": false,
+    "document": false
+  },
+  "env": {
+    "es6": true,
+    "jest": true
+  },
+  "rules": {
+    "semi": [1, "never"],
+    "no-use-before-define": ["off"],
+    "react/jsx-closing-bracket-location": [1, "line-aligned"],
+    "react/require-optimization": ["off"],
+    "indent": ["warn", 2, {"MemberExpression": 0}],
+    "no-confusing-arrow": ["off"],
+    "no-console": [1]
+  }
+}
